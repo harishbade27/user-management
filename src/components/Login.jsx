@@ -181,16 +181,17 @@ const Login = ({ onSubmit }) => {
                                     </Form.Check.Label>
                                 </div>
 
-                                <a
-                                    href=""
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        navigate("/reset-password");
-                                    }}
-                                    className="text-decoration-none"
+                                <span
+                                    role="button"
+                                    tabIndex="0"
+                                    onClick={() => navigate("/reset-password")}
+                                    onKeyDown={(e) => e.key === 'Enter' && navigate("/reset-password")}
+                                    className="text-decoration-none text-primary"
+                                    style={{ cursor: "pointer" }}
                                 >
                                     Forgot Password?
-                                </a>
+                                </span>
+
                             </div>
 
                             <Button
