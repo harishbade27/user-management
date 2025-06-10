@@ -182,6 +182,7 @@ const Login = ({ onSubmit }) => {
                                 </div>
 
                                 <a
+                                    href=""
                                     onClick={(e) => {
                                         e.preventDefault();
                                         navigate("/reset-password");
